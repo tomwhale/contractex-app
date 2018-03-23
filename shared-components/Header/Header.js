@@ -1,4 +1,5 @@
 import React from 'react'
+import { SmallButton } from "../Button"
 
 export default () => (
   <div className="nav-container ">
@@ -46,11 +47,7 @@ export default () => (
                   </div>
                   <div className="col-lg-5 text-right text-left-xs text-left-sm order-lg-3">
                       <div className="bar__module">
-                          <a className="btn btn--sm btn--primary type--uppercase" href="#">
-                              <span className="btn__text">
-                                  Get Started For Free
-                              </span>
-                          </a>
+                        <SmallButton text="Get Started For Free" url="#" />
                       </div>
                   </div>
               </div>
