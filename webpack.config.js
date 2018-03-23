@@ -5,8 +5,7 @@ const port = process.env.PORT || 3000;
 
 module.exports = {
   mode: 'development',
-  entry: './index.js',
-  entry: ['react-hot-loader/patch', './src/index.js'],
+  entry: ['react-hot-loader/patch', './index.js'],
   output: {
     filename: 'bundle.[hash].js',
     publicPath: '/'
@@ -40,8 +39,7 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
-      template: 'public/index.html',
-      favicon: 'public/favicon.ico'
+      template: 'public/index.html'
     })
   ],
   devServer: {
