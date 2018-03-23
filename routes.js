@@ -1,11 +1,11 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import PartnerContainer from './containers/PartnerContainer'
+import Home from './components/Home'
 
 const Routes = () => (
     <Router>
       <Switch>
-        <Route path="/" component={SearchContainer} />
+        <Route path="/" component={Home} />
       </Switch>
     </Router>
   )
