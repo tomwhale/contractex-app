@@ -3,8 +3,8 @@ import store from './store'
 import { Provider } from 'react-redux'
 import Routes from './Routes'
 
-export default ( ) => (
+export default (props) => (
   <Provider store={store}>
-    <Routes />
+    <Routes {...props} />
   </Provider>
 )

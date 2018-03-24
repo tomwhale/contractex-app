@@ -7,10 +7,6 @@ export default () => (
           <div className="container">
               <div className="row">
                   <div className="col-3 col-md-2">
-                      <a href="index.html">
-                          <img className="logo logo-dark" alt="logo" src="img/logo-dark.png" />
-                          <img className="logo logo-light" alt="logo" src="img/logo-light.png" />
-                      </a>
                   </div>
                   <div className="col-9 col-md-10 text-right">
                       <a href="#" className="hamburger-toggle" data-toggle-class="#menu2;hidden-xs hidden-sm">
@@ -47,7 +43,7 @@ export default () => (
                   </div>
                   <div className="col-lg-5 text-right text-left-xs text-left-sm order-lg-3">
                       <div className="bar__module">
-                        <SmallButton text="Get Started For Free" url="#" />
+                        <SmallButton text="Get Started For Free" url="/search" />
                       </div>
                   </div>
               </div>
