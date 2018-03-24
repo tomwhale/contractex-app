@@ -1,4 +1,5 @@
-import { Component }, react from 'react'
+import * as R from 'ramda'
+import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import Options from './Options'
 
@@ -9,15 +10,22 @@ import Options from './Options'
 }))
 
 export default class OptionsContainer extends Component {
-  constructor() {
+  constructor(props) {
+    super(props)
     this.state = {
       step: 0
     }
   }
 
   _generateProps = () => ({
+    onSelect: this._onSelect,
     ...this.state,
     ...this.props
+  })
+
+  _onSelect = R.curry((step, value, e) => {
+    console.log(step, value, e)
+
   })
 
   _increaseStep = () => {

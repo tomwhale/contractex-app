@@ -1,11 +1,12 @@
 import React from "react"
 import { LargeButton } from "../../../shared-components/Button"
+import { FullWidthColumn } from "../../../shared-components/Column"
 
 export default () => (
   <section className="text-center">
     <div className="container">
       <div className="row">
-        <div className="col-md-12">
+        <FullWidthColumn>
           <h1>Welcome to <span className="color--primary">Contractex.</span>
             <br className="hidden-xs hidden-sm" />Finding Experienced Contractors
             <br className="hidden-xs hidden-sm" />In Seconds</h1>
@@ -13,7 +14,7 @@ export default () => (
           <span className="block type--fine-print">
             Or see <a href="#">how it works</a>
           </span>
-        </div>
+        </FullWidthColumn>
       </div>
     </div>
   </section>
